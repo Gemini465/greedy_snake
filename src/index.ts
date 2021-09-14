@@ -1,3 +1,4 @@
 import './index.less'
+import gameControl from './modules/gameControl'
 
-console.log('Loading')
+new gameControl()
