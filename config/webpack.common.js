@@ -7,7 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { ISDEV } = require("./constants");
 
 module.exports = {
-    entry: ['react-hot-loader/patch', "./src/index.ts"],
+    entry: ['react-hot-loader/patch', "./src/index.tsx"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: `js/[name]${ISDEV ? "" : ".[hash:8]"}.js`,
